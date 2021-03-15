@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weight_cant_exceed_payload</fullName>
+    <active>true</active>
+    <description>Consignment weight can&apos;t exceed container&apos;s payload</description>
+    <errorConditionFormula>Weight_kg__c  &gt;  Container__r.Max_Payload_kg__c</errorConditionFormula>
+    <errorDisplayField>Weight_kg__c</errorDisplayField>
+    <errorMessage>Consignment weight can&apos;t exceed container&apos;s payload</errorMessage>
+</ValidationRule>

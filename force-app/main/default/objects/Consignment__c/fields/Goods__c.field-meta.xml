@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Goods__c</fullName>
+    <description>name of goods in consignment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>name of goods in consignment</inlineHelpText>
+    <label>Goods</label>
+    <length>20</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

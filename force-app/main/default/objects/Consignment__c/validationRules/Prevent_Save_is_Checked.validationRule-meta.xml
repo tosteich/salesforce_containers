@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Save_is_Checked</fullName>
+    <active>true</active>
+    <errorConditionFormula>Prevent_Save__c  = TRUE</errorConditionFormula>
+    <errorMessage>Record can&apos;t be saved - Ship is overloaded</errorMessage>
+</ValidationRule>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>20 DV</fullName>
+        <default>false</default>
+        <label>20 DV</label>
+    </customValue>
+    <customValue>
+        <fullName>40 DV</fullName>
+        <default>false</default>
+        <label>40 DV</label>
+    </customValue>
+    <customValue>
+        <fullName>40 HC</fullName>
+        <default>false</default>
+        <label>40 HC</label>
+    </customValue>
+    <customValue>
+        <fullName>45 HC</fullName>
+        <default>false</default>
+        <label>45 HC</label>
+    </customValue>
+    <description>list of standard container types</description>
+    <masterLabel>Container Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

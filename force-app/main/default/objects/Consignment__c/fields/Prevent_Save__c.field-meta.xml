@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Save__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Prevents Consignment Saving if Ship&apos;s capacity exceeded</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Prevents Consignment Saving if Ship&apos;s capacity exceeded</inlineHelpText>
+    <label>Prevent Save</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

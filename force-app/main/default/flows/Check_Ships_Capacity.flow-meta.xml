@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Calc_Potential_Quantity</name>
+        <label>Calc_Potential_Quantity</label>
+        <locationX>176</locationX>
+        <locationY>279</locationY>
+        <assignmentItems>
+            <assignToReference>var_Teus_Potential</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Voyage__r.TEUs_Loaded__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_Teus_Potential</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>CalcConsTEUs</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Capacity</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Prevent_Save</name>
+        <label>Prevent Save</label>
+        <locationX>175</locationX>
+        <locationY>591</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Prevent_Save__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_Capacity</name>
+        <label>Check Capacity</label>
+        <locationX>166</locationX>
+        <locationY>432</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Ship_Capacity_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Voyage__r.Ship__r.Capacity_TEU__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>var_Teus_Potential</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Prevent_Save</targetReference>
+            </connector>
+            <label>Ship Capacity Check</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>CalcConsTEUs</name>
+        <dataType>Number</dataType>
+        <expression>IF(ISPICKVAL({!$Record.Container__r.Container_Type__c}, &quot;20 DV&quot;) , 1, 2)</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Check Ships Capacity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Check Ships Capacity</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>47</locationX>
+        <locationY>31</locationY>
+        <connector>
+            <targetReference>Calc_Potential_Quantity</targetReference>
+        </connector>
+        <object>Consignment__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>var_Teus_Potential</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+</Flow>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Voyage_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Ship__c</fields>
+    <fields>Loading_Port__c</fields>
+    <fields>Discharging_Port__c</fields>
+    <label>Voyage  Layout</label>
+</CompactLayout>

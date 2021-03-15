@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Odessa</fullName>
+        <default>false</default>
+        <label>Odessa</label>
+    </customValue>
+    <customValue>
+        <fullName>Haifa</fullName>
+        <default>false</default>
+        <label>Haifa</label>
+    </customValue>
+    <customValue>
+        <fullName>Istanbul</fullName>
+        <default>false</default>
+        <label>Istanbul</label>
+    </customValue>
+    <customValue>
+        <fullName>Chittagong</fullName>
+        <default>false</default>
+        <label>Chittagong</label>
+    </customValue>
+    <customValue>
+        <fullName>Xiamen</fullName>
+        <default>false</default>
+        <label>Xiamen</label>
+    </customValue>
+    <masterLabel>Ports</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

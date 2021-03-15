@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commercial_Container</fullName>
+    <active>true</active>
+    <description>Container belongs to United Company</description>
+    <label>Commercial Container</label>
+    <picklistValues>
+        <picklist>Color__c</picklist>
+        <values>
+            <fullName>BLUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GREEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GREY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RED</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Container_Type__c</picklist>
+        <values>
+            <fullName>20 DV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40 DV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40 HC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 HC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Need Inspection</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

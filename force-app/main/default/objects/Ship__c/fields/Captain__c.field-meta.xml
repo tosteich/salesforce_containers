@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Captain__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Captain details</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captain details</inlineHelpText>
+    <label>Captain</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Ship&apos;s Captains</relationshipLabel>
+    <relationshipName>Ships</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

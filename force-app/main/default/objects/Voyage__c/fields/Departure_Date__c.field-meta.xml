@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Departure_Date__c</fullName>
+    <description>date of vessel&apos;s departure from loading port</description>
+    <externalId>false</externalId>
+    <inlineHelpText>date of vessel&apos;s departure from loading port</inlineHelpText>
+    <label>Date of Sailing From Loading Port</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

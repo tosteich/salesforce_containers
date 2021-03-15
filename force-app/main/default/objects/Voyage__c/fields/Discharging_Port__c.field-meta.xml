@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discharging_Port__c</fullName>
+    <description>port where the voyage ends</description>
+    <externalId>false</externalId>
+    <inlineHelpText>port where the voyage ends</inlineHelpText>
+    <label>Discharging Port</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Ports</valueSetName>
+    </valueSet>
+</CustomField>

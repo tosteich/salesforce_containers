@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Container_Type__c</fullName>
+    <description>type of sea container</description>
+    <externalId>false</externalId>
+    <inlineHelpText>type of sea container</inlineHelpText>
+    <label>Container Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Container_Types</valueSetName>
+    </valueSet>
+</CustomField>
